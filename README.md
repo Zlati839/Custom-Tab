@@ -7,8 +7,8 @@ A tab with some functions , Music and a OneShot theme :D
 - Calendar
 - Calculator
 - Music Player
-    - Play/Pause
-    - Progress bar
+  - Play/Pause
+  - Progress bar
 - Google Search
 - Search bar
 
