@@ -1,11 +1,18 @@
 # Custom Tab
 A tab with some functions , Music and a OneShot theme :D
 
-## Functions 
-There is a Clock that tells you the time , a calendar
-that says the date , a calculator that does math and a music player
-for music 
+## ✨ Features
+
+- Live Clock
+- Calendar
+- Calculator
+- Music Player
+- Google Search
+- Search bar
+
+
 ## Theme 
+
 The theme is after the game OneShot like a few other of my projects
 , its just a good game 
 ## Code and Resources 
