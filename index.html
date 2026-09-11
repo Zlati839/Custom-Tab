@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html>
+  <head> 
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="Font" id = "body" >
+     <div class = "container">
+       <img src="1384060.png" id="youtube" onclick="window.open('https://www.youtube.com/', '_blank')" style="width: 4%; height: 8%; position: absolute; top:56%; left:36.5%; background-color: #bf045e; border-radius: 20% ;cursor: pointer;">
+       <img src = "25231.png"  id = "github" onclick="window.open('https://www.github.com/', '_blank')"style = "width: 4%; height: 8%; position: absolute; top:56%; left:44%; background-color: #bf045e; border-radius: 20% ;cursor: pointer;">   
+       <img src = "star-character-e6aa34d1.avif"  id = "star" onclick="window.open('https://stardance.hackclub.com/home', '_blank')" style = "width: 4%; height: 8%; position: absolute; top:56%; left:51.5%; background-color: #bf045e; border-radius: 20%; cursor: pointer;">
+       <img src = "free-reddit-logo-icon-2436-thumb.png"  id = "reddit" onclick="window.open('https://www.reddit.com/', '_blank')" style = "width: 4%; height: 8%; position: absolute; top:56%; left:59%; background-color: #bf045e; border-radius: 20%; cursor: pointer;">
+          
+       <!--------------------------Calculator---------------------------------------->
+        <div class = "windoll" style = "width:20%; height:40%; top:60%; left:110%; " id = "Calculator">
+           <input id = "display" readonly style = "width: 90%; height: 10%; position: absolute; left:5%; top:5%; font-size: 24px; background: rgb(61, 59, 59); border: white 3px solid;">
+           <div id = "buttons" style = "width: 90%; height: 60%; position: absolute; left:5%; top:20%; display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(5, 1fr); ">
+             <button class = "button" onclick = "appendValue('+') " style = "background-color:orange;">+</button>        
+             <button class = "button" onclick = "appendValue('1')">1</button>
+             <button class = "button" onclick = "appendValue('2')">2</button>
+             <button class = "button" onclick = "appendValue('3')">3</button>
+             <button class = "button" onclick = "appendValue('-')" style = "background-color:orange;">-</button>
+             <button class = "button" onclick = "appendValue('4')">4</button>
+             <button class = "button" onclick = "appendValue('5')">5</button>
+             <button class = "button" onclick = "appendValue('6')">6</button>
+             <button class = "button" onclick = "appendValue('*')" style = "background-color:orange;">*</button>
+             <button class = "button" onclick = "appendValue('7')">7</button>
+             <button class = "button" onclick = "appendValue('8')">8</button>
+             <button class = "button" onclick = "appendValue('9')">9</button>
+             <button class = "button" onclick = "appendValue('/') " style = "background-color:orange; ">/</button>
+             <button class = "button" onclick = "appendValue('0')">0</button>
+             <button class = "button" onclick = "appendValue('.')">.</button>
+             <button class = "button" onclick = "calculate()" style = "background-color:orange;">=</button>
+             <button class = "button" onclick = "clearDisplay()" style = "background-color:orange;">C</button>
+         </div>
+        </div>
+      <!----------------------------------Calendar----------------------------------->
+       <div class = "windoll" style = " border-radius:25px ;width: 400px; height: 230px ; top:20%; left:110%;" id = "Calendar">
+          <p id = "calendar-date" class = "date">June 2026</p>
+          <div id = "calendar" >
+             <ul class = "week">
+              <li>Sun</li>
+              <li>Mon</li>
+              <li>Tue</li>
+              <li>Wed</li>
+              <li>Thu</li>
+              <li>Fri</li>
+              <li>Sat</li>
+             </ul>
+             <ul class = "day" id = "day">
+             </ul>
+          </div>
+        </div>
+        <div class = "windoll" id = "musicW" >
+          <!----------------------Window1------------------>
+          <div class = "music1" id = "music1" >
+             <div class = "audioPlayer">
+                <div class = "img"><img src = "idk.jpg" style = "width: 45% ; height: 65%; position:absolute; left:30%;" id = "AlbumArt"></div>
+                <audio  class = "audio"src ="Music/1. My Burden Is Light.mp3" id = "Song1"></audio>
+                <audio  class = "audio"src ="Music\22. On Little Cat Feet.mp3" id = "Song2"></audio>
+                <audio  class = "audio"src ="Music/99.9 - MOB CHOIR (youtube) (1).mp3" id = "Song3"></audio>
+                <audio  class = "audio"src ="Music/Calamity Mod OST - Catastrophes before the calamity - Interlude 03 - DM DOKURO (youtube).mp3" id = "Song4"></audio>
+                <audio  class = "audio"src ="Music\38. Self Contained Universe.mp3" id = "Song5"></audio>
+                <audio  class = "audio"src ="Music/streetcat ft. Nekomura Iroha - FLAVOR FOLEY (youtube).mp3" id = "Song6"></audio>
+                <audio  class = "audio"src ="Music/Terraria Calamity Mod Music - Roar of The Jungle Dragon - Theme of Jungle Dragon, Yharon (Phase 2) - DM DOKURO (youtube).mp3" id = "Song7"></audio>
+                <p style = "position: absolute; top:65%; left: 17%; font-size: 33px;" id = "MusicText">My Burden Is Light</p>
+                <div class = "PlayButton" id = "play">
+                   <p style = "font-size:14px; color:black; top:27%; position: absolute; left:25%;">Play</p>
+                </div>
+                <div class = "PlayButton" id="Pause" style="left:80%;">
+                   <p style = "font-size:14px; color:black; top:27%; position: absolute; left:15%;">Pause</p>
+                </div>
+                <p id = "durationMax" style = "font-size: 20px ; top:80% ; left:70%; position: absolute;">1:55</p>
+                <p style ="font-size: 20px;  top:79.5%; position: absolute; left:16%;"> 0:00</p>
+                 <div class = "progressbar" >
+                  <div id = "progress" class = "progress"></div>
+               </div>
+           </div>
+           <!-----------------Window2---------------------->
+           <div class = "music2" id = "music2" style = "overflow-y: scroll;">
+             <div class = "music2" style = "width: 95%; height: 30%; top:3%; left:2.5%; " id = "Audio1">
+                <img src = "idk.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> My Burden Is Light </p>
+                <p id = "Duration" style = "left:80%; top:20%;"></p>
+             </div>
+             <div class = "music2" style = "width: 95%; height: 30%; top:34%; left:2.5%;" id = "Audio2">
+                <img src = "idk.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> On Little Cat Feet </p>
+              </div>
+              <div class = "music2" style = "width: 95%; height: 30%; top:65%; left:2.5%;" id = "Audio3">
+                <img src = "mob_song.jpg" >
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> 99.9 </p>
+             </div>
+             <div class = "music2" style = "width: 95%; height: 30%; top:96%; left:2.5%;" id = "Audio4">
+                <img src = "a2145936506_10.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> Catastrophes before the calamity  </p>
+             </div>
+             <div class = "music2" style = "width: 95%; height: 30%; top:127%; left:2.5%;" id = "Audio5">
+                <img src = "idk.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> Self Contained Universe </p>
+             </div>
+             <div class = "music2" style = "width: 95%; height: 30%; top:158%; left:2.5%;" id = "Audio6">
+                <img src = "images.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> Street Cat </p>
+             </div>
+             <div class = "music2" style = "width: 95%; height: 30%; top:189%; left:2.5%;" id = "Audio7">
+                <img src = "a2145936506_10.jpg">
+                <p style = "font-size:24px; top:-5%; position: absolute; left:20%;"> Roar of the Jungle Dragon </p>
+             </div>
+          </div>
+      </div>
+        </div>
+        <div class = "Clock" id = "Time"><p id = "timeElement"></p></div>
+        <form action="https://www.google.com/search" method = "get" class = "bar" target="_blank" rel="">
+            <input type = "text" placeholder="   Search" name="q">
+            <button type="submit"><img src = "search_icon.png" ></button>
+        </form>
+     </div>
+     <script src="functions.js">
+     </script>    
+  </body>
+</html>
