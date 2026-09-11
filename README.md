@@ -1,7 +1,7 @@
 # Custom Tab
 A tab with some functions , Music and a OneShot theme :D
 
-## ✨ Features
+##  Features
 - Quick Links
   - Gives quick access to certain websites
 - Live Clock
