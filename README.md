@@ -5,9 +5,9 @@ A tab with some functions , Music and a OneShot theme :D
 - Quick Links
   - Gives quick access to certain websites
 - Live Clock
-   -Live Time output
+   - Live Time output
 - Calendar
-   -Shows the day, month, and year
+   - Shows the day, month, and year
 - Calculator
 - Music Player
   - Play/Pause
